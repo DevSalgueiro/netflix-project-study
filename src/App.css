@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+
+li {
+    color: #fff;
+    list-style: none;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listas {
+    display: flex;
+}
+
+.item {
+    min-width: 120px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.item:hover {
+    background: rgb(102, 102, 102);
+    border-radius: 5px;
+
+}
+
+.Chamada {
+    font-size: 50px;
+    color: #fff;
+    padding-left: 30px;
+    
+   
+}
+
+
+.populares {
+    min-width: 120px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.populares:hover {
+    background: rgb(175, 37, 37);
+    border-radius: 5px;
+
 }

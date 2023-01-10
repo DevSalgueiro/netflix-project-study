@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './componentes/Logo'
+import Pesquisa from './componentes/Pesquisa';
+
+const listas= ["Início", "Séries", "Filmes", "Minha lista"]
+const populares= ["#matrix", "#vingadores", "#titanic", "# simpsons", "#theoffice", "#debieloide"]
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <header className='App-header'>
+        <Logo />
+
+        <ul className='listas'>
+          {listas.map((texto) => (
+            <li className='item'>{texto}</li>
+          )) }
+        </ul>
+
+        </header>
+
+        <p className='Chamada'>Aproveite a <u>Netflix</u> grátis!</p>
+
+        <Pesquisa />
+
+        <ul className='listas'>
+          {populares.map((texto) => (
+            <li className='populares'>{texto}</li>
+          )) }
+        </ul>
+
+        
+
     </div>
   );
 }
