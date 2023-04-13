@@ -1,4 +1,6 @@
-# Projeto/estudo: criando pesquisa de dados em React
+# Project/study: creating data search in React
+
+Small project/study of a simple website built with React. The idea is to work with data that will be fetched based on what the user types in the search field.
 
 <br>
 
